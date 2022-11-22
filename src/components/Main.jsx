@@ -11,7 +11,7 @@ class Main extends react.Component {
             <div>
                 <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
                     
-                    <a className="navbar-brand ps-3" href="index.html">Inicio InstaYa</a>                    
+                    <a className="navbar-brand ps-3" href="/Main">Inicio InstaYa</a>                    
                     <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i className="fas fa-bars" /></button>                    
                     <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">                    
                         <div className="input-group">
@@ -22,10 +22,12 @@ class Main extends react.Component {
                     
                     <ul className="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-user fa-fw" /></a>
-                            <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="login.html">Logout</a></li>
-                            </ul>
+                            <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i className="fas fa-user fa-fw" />
+                                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a className="dropdown-item" href="/">Logout</a></li>
+                                </ul>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -35,7 +37,7 @@ class Main extends react.Component {
                             <div className="sb-sidenav-menu">
                                 <div className="nav">
                                     <div className="sb-sidenav-menu-heading">Menu</div>
-                                    <a className="nav-link" href="index.html">
+                                    <a className="nav-link" href="/Main">
                                         <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt" /></div>
                                         Inicio
                                     </a>							
@@ -46,9 +48,9 @@ class Main extends react.Component {
                                     </a>
                                     <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                         <nav className="sb-sidenav-menu-nested nav" align="left">
-                                            <a className="nav-link" href="tables.html">Listado de Ordenes</a>
-                                            <a className="nav-link" href="actualizacionOT.html">Actualizacion de Ordenes</a>
-                                            <a className="nav-link" href="CreacionOT.html">Registro de ordenes</a>
+                                            <a className="nav-link" href="/Listar">Listado de Ordenes</a>
+                                            <a className="nav-link" href="/Actualizacion">Actualizacion de Ordenes</a>
+                                            <a className="nav-link" href="/Creacion">Registro de ordenes</a>
                                         </nav>
                                     </div>
                                 </div>                            

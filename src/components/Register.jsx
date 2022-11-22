@@ -55,12 +55,12 @@ class Register extends react.Component {
                                                     </div>
                                                 </div>
                                                 <div className="mt-4 mb-0">
-                                                    <div className="d-grid"><a className="btn btn-primary btn-block" href="login.html">Crear Cuenta</a></div>
+                                                    <div className="d-grid"><a className="btn btn-primary btn-block" href="/">Crear Cuenta</a></div>
                                                 </div>
                                             </form>
                                         </div>
                                         <div className="card-footer text-center py-3">
-                                            <div className="small"><a href="login.html">Tiene una Cuenta? Vamos a Ingresar</a></div>
+                                            <div className="small"><a href="/">Tiene una Cuenta? Vamos a Ingresar</a></div>
                                         </div>
                                     </div>
                                 </div>

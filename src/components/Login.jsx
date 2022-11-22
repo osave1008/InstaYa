@@ -4,6 +4,7 @@ import "./js/scripts.js";
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js";
 import "https://use.fontawesome.com/releases/v6.1.0/js/all.js";
 import Logo from './Logo.png';
+import {Link} from "react-router-dom";
 
 class Login extends react.Component {
     render(){
@@ -31,7 +32,7 @@ class Login extends react.Component {
                                                     <label htmlFor="inputPassword">Contraseña</label>
                                                 </div>                                           
                                                 <div className="mt-4 mb-0">
-                                                    <div className="d-grid"><a className="btn btn-primary btn-block" href="./Main">ingresar</a></div>
+                                                    <div className="d-grid"><Link to="/Main"><a className="btn btn-primary btn-block">ingresar</a></Link></div>
                                                 </div>
                                             </form>
                                         </div>
