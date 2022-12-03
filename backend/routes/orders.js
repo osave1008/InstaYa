@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { Order, validator } = require("../models/orders");
-const validate = require("../middleware/validate");
-const isValidObjectId = require("../middleware/isValidObjectId");
-const asyncHandler = require("../middleware/asyncHandler");
+const validate = require("../middlewares/validate");
+const isValidObjectId = require("../middlewares/isValidObjectId");
+const asyncHandler = require("../middlewares/asyncHandler");
 
 // Crear una orden
 router.post(

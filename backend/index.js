@@ -8,13 +8,14 @@ const app = express();
 const conn = require("./db");
 const authRoutes = require("./routes/authRoutes");
 const privateRoutes = require("./routes/privateRoutes");
+const orders = require("./routes/orders");
 const checkAuth = require("./middlewares/checkAuth");
 
 //Middleware
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
-app.use(logger()); 
+//app.use(logger()); 
     //Router de rutas protegidas
 
     //Router de rutas de autenticacion
@@ -27,4 +28,3 @@ app.listen(3001, () => {
     console.log("API REST STARTED ...");
     conn();
 });
-
